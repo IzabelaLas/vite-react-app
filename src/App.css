@@ -1,0 +1,22 @@
+body {
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgb(222, 168, 248) 0%,
+      rgb(168, 222, 248) 21.8%,
+      rgb(189, 250, 205) 35.6%,
+      rgb(243, 250, 189) 52.9%,
+      rgb(250, 227, 189) 66.8%,
+      rgb(248, 172, 172) 90%,
+      rgb(254, 211, 252) 99.7%
+    )
+    no-repeat fixed;
+}
+
+.everything {
+  margin: 100px auto;
+  background-color: rgb(253, 253, 253);
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  box-shadow: rgba(28, 23, 24, 0.2) 0px 8px 30px;
+}
