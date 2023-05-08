@@ -1,6 +1,4 @@
-import DubaiTime from "./DubaiTime.jsx";
 import CityExampleTime from "./CityExampleTime.jsx";
-import WarsawTime from "./WarsawTime.jsx";
 import Select from "../Select";
 import { useState, useEffect } from "react";
 

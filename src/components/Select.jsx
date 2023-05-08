@@ -7,7 +7,7 @@ export default function Select(props) {
   return (
     <select
       id="citySelect"
-      className="block m-auto w-9/12 p-2 text-sm rounded-md opacity-80"
+      className="block m-auto w-9/12 p-2 text-sm rounded-md opacity-80 bg-amber-100"
       value={props.value}
       onChange={handleTimezoneChange}
     >
