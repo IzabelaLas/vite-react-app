@@ -1,11 +1,12 @@
 export default function Footer() {
   return (
-    <div>
+    <div className="text-center">
       This clock was coded by <strong>Izabela Łaszczuk</strong>. See it on{" "}
       <a
         href="https://github.com/IzabelaLas/react-world-clock"
         target="_blank"
         rel="noreferrer"
+        className="text-green-600"
       >
         GitHub
       </a>

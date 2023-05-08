@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="everything">
-        <h1 className="text-center">World clock</h1>
+        <h1 className="text-center text-4xl p-12">World clock</h1>
         <CitiesDisplayed />
       </div>
       <footer>

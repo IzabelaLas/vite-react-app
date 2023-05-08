@@ -14,16 +14,16 @@ export default function DubaiTime() {
   }, []);
 
   return (
-    <div id="firstCityDisplayed">
-      <div className="citiesDisplayed" id="dubai">
-        <div className="CityAndDate">
-          <h2 className="city">Dubai</h2>
-          <div className="date">{dubaiDate}</div>
+    <div className="flex justify-between" id="dubai">
+      <div className="CityAndDate">
+        <h2 className="text-3xl text-indigo-600">Dubai</h2>
+        <div className="opacity-70">{dubaiDate}</div>
+      </div>
+      <div className="flex text-4xl pr-5 mt-3">
+        <div className="text-left min-w-[150px]">
+          {dubaiTime?.split(" ")[0]}
         </div>
-        <div className="time d-flex">
-          <div>{dubaiTime?.split(" ")[0]}</div>
-          <div className="timeAmPM">{dubaiTime?.split(" ")[1]}</div>
-        </div>
+        <div className="text-sm text-right">{dubaiTime?.split(" ")[1]}</div>
       </div>
     </div>
   );

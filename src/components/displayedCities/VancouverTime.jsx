@@ -16,16 +16,16 @@ export default function VancouverTime() {
   }, []);
 
   return (
-    <div id="firstCityDisplayed">
-      <div className="citiesDisplayed" id="warsaw">
-        <div className="CityAndDate">
-          <h2 className="city">Vancouver</h2>
-          <div className="date">{vancouverDate}</div>
+    <div className="flex justify-between" id="warsaw">
+      <div className="CityAndDate">
+        <h2 className="text-3xl text-indigo-600">Vancouver</h2>
+        <div className="opacity-70">{vancouverDate}</div>
+      </div>
+      <div className="flex text-4xl pr-5 mt-3">
+        <div className="text-left min-w-[150px]">
+          {vancouverTime?.split(" ")[0]}
         </div>
-        <div className="time d-flex">
-          <div>{vancouverTime?.split(" ")[0]}</div>
-          <div className="timeAmPM">{vancouverTime?.split(" ")[1]}</div>
-        </div>
+        <div className="text-sm text-right">{vancouverTime?.split(" ")[1]}</div>
       </div>
     </div>
   );
