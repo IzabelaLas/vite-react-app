@@ -12,22 +12,22 @@ body {
     no-repeat fixed;
 }
 
-.everything {
+/* .everything {
   margin: 100px auto;
   background-color: rgb(253, 253, 253);
   border-radius: 50%;
   width: 600px;
   height: 600px;
   box-shadow: rgba(28, 23, 24, 0.2) 0px 8px 30px;
-}
+} */
 
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
   .everything {
     margin: 0 auto;
     border-radius: 20px;
     width: auto;
     padding: 10px;
-  }
+  } */ 
   /* .allCities {
     margin: 0 !important;
     margin-top: 10px !important;
@@ -53,4 +53,4 @@ body {
   .footer {
     font-size: 12px !important;
   } */
-}
+/* } */
