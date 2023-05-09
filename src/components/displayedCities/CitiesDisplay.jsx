@@ -1,5 +1,5 @@
-import CityExampleTime from "./CityExampleTime.jsx";
-import Select from "../Select";
+import CityExampleTime from "@components/displayedCities/CityExampleTime";
+import Select from "@components/Select";
 import { useState, useEffect } from "react";
 
 export default function CitiesDisplayed() {
