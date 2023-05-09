@@ -12,8 +12,8 @@ export default function CityExampleTime({
   const time = moment(new Date(currentTimestamp)).tz(timezone).format("LTS");
 
   return (
-    <div className="allCities flex justify-between p-3 ml-12 mt-3 sm:p-0 sm:ml-2 sm:mt-12">
-      <div className="CityAndDate">
+    <div className="flex justify-between p-3 ml-12 mt-3 sm:p-0 sm:ml-2 sm:mt-12">
+      <div>
         <h2 className="text-3xl text-emerald-600 sm:text-2xl">{cityLabel}</h2>
         <div className="opacity-70 sm:text-sm">{date}</div>
       </div>
