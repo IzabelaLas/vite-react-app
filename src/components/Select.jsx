@@ -11,7 +11,7 @@ export default function Select(props) {
       value={props.value}
       onChange={handleTimezoneChange}
     >
-      <option value="">Select a city...</option>
+      <option value="Europe/Warsaw">Select a city...</option>
       <option value="Europe/Paris">Paris</option>
       <option value="America/Los_Angeles">Los angeles</option>
       <option value="Asia/Singapore">Singapore</option>
