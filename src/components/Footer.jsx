@@ -1,5 +1,6 @@
 export default function Footer() {
   return (
+    <footer>
     <div className="text-center sm:text-sm">
       This clock was coded by <strong>Izabela Łaszczuk</strong>. See it on{" "}
       <a
@@ -11,5 +12,6 @@ export default function Footer() {
         GitHub
       </a>
     </div>
+    </footer>
   );
 }
