@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="text-center sm:text-sm">
       This clock was coded by <strong>Izabela Łaszczuk</strong>. See it on{" "}
       <a
-        href="https://github.com/IzabelaLas/react-world-clock"
+        href="https://github.com/IzabelaLas/vite-react-app"
         target="_blank"
         rel="noreferrer"
         className="text-green-600"
