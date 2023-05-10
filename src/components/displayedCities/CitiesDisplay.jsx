@@ -17,25 +17,18 @@ export default function CitiesDisplayed() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const cityExamples = [
+  { cityLabel: timezone.replace("_", " ").split("/")[1], timezone: timezone, currentTimestamp: currentTimestamp },
+   { cityLabel: "Vancouver", timezone: "America/Vancouver", currentTimestamp: currentTimestamp },
+   { cityLabel: "Dubai", timezone: "Asia/Dubai", currentTimestamp: currentTimestamp },
+];
+
+
   return (
     <div>
       <Select value={timezone} onChange={handleTimezoneChange} />
 
-      <CityExampleTime
-        cityLabel={timezone.replace("_", " ").split("/")[1]}
-        timezone={timezone}
-        currentTimestamp={currentTimestamp}
-      />
-      <CityExampleTime
-        cityLabel="Vancouver"
-        timezone="America/Vancouver"
-        currentTimestamp={currentTimestamp}
-      />
-      <CityExampleTime
-        cityLabel="Dubai"
-        timezone="Asia/Dubai"
-        currentTimestamp={currentTimestamp}
-      />
-    </div>
+    <CityExampleTime cityExamples={cityExamples} />
+ </div>
   );
 }
