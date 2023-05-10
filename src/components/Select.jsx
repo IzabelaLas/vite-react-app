@@ -1,4 +1,11 @@
 export default function Select(props) {
+  const cities = [
+    { name: "Select a city...", timezone: "Europe/Warsaw" },
+    { name: "Paris", timezone: "Europe/Paris" },
+    { name: "Los Angeles", timezone: "America/Los_Angeles" },
+    { name: "Singapore", timezone: "Asia/Singapore" },
+  ];
+
   const handleTimezoneChange = (event) => {
     const timezone = event.target.value;
     props.onChange(timezone);
@@ -11,10 +18,11 @@ export default function Select(props) {
       value={props.value}
       onChange={handleTimezoneChange}
     >
-      <option value="Europe/Warsaw">Select a city...</option>
-      <option value="Europe/Paris">Paris</option>
-      <option value="America/Los_Angeles">Los angeles</option>
-      <option value="Asia/Singapore">Singapore</option>
+      {cities.map((city, index) => (
+        <option key={index} value={city.timezone}>
+          {city.name}
+        </option>
+      ))}
     </select>
   );
 }
